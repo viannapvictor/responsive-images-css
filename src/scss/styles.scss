@@ -1,0 +1,39 @@
+$color-font: #fff;
+$color-bg-default: #33f;
+$font-default: Arial, Helvetica, sans-serif;
+
+body {
+    background-size: cover;
+    font-family: $font-default;
+    margin: 0;
+}
+
+h1 {
+    color: $color-font;
+    text-align: center;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-between;
+    margin: 5px;
+    gap: 5px;
+    margin: 0 auto;
+    
+    img {
+        height: 200px;
+        width: auto;
+        object-fit: fill;
+        object-position: bottom;
+        border: 1px solid #ccc;
+
+        &:hover {
+            opacity: 75%;
+            border-color: $color-bg-default;
+        }
+    }
+
+}
